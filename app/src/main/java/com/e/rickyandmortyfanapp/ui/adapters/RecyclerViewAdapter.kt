@@ -3,7 +3,6 @@ package com.e.rickyandmortyfanapp.ui.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.e.rickyandmortyfanapp.R
 import com.e.rickyandmortyfanapp.extensions.ctx
@@ -18,7 +17,7 @@ class RecyclerViewAdapter(private val characterList: Characters) : RecyclerView.
         return ViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: RecyclerViewAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bindCharacter(characterList.results[position])
     }
 
